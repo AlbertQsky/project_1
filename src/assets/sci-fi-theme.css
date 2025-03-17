@@ -1,0 +1,126 @@
+body {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #00ffcc;
+  font-family: 'Orbitron', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  border-bottom: 2px solid #00ffcc;
+  display: flex;
+  gap: 10px;
+}
+
+nav a {
+  color: #00ffcc;
+  text-decoration: none;
+  margin-right: 15px;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ff00ff;
+}
+
+button {
+  background: #1e3c72;
+  color: #00ffcc;
+  border: 2px solid #00ffcc;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+  border-radius: 10px;
+}
+
+button:hover {
+  background: #162447;
+  color: #ff00ff;
+}
+
+input {
+  height: 30px;
+  font-family: monospace;
+  background: rgba(0, 0, 0, 0.8);
+  color: #00ffcc;
+  border: 1px solid #00ffcc;
+  padding: 5px;
+  font-size: 16px;
+  width: 99%;
+  overflow: auto;
+}
+
+select {
+  background: rgba(0, 0, 0, 0.8);
+  color: #00ffcc;
+  border: 1px solid #00ffcc;
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 10px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+select:hover, select:focus {
+  border-color: #ff00ff;
+  box-shadow: 0 0 10px #ff00ff;
+}
+
+input, button, select {
+  margin: 10px 5px; /* 添加上下左右的间隔 */
+}
+
+h1, h2, h3 {
+  color: #00ffcc;
+  text-shadow: 0 0 10px #00ffcc;
+  text-align: center; /* 居中标题 */
+}
+
+#app {
+  padding: 20px;
+}
+
+.calculator {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+}
+
+.calculator button {
+  padding: 20px;
+  font-size: 18px;
+}
+
+.expression-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+}
+
+.cursor {
+  position: absolute;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background-color: black;
+  animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+#ggb-element {
+  border: 2px solid #00ffcc; /* 边框颜色 */
+  border-radius: 10px; /* 圆角边框 */
+  box-shadow: 0 0 20px #00ffcc; /* 发光效果 */
+  background: rgba(15, 32, 39, 0.9); /* 背景颜色 */
+  overflow: hidden; /* 隐藏溢出内容 */
+}

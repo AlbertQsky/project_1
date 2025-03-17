@@ -47,3 +47,7 @@ export default {
   }
 }
 </script>
+
+<style>
+/* 移除样式，统一使用全局 CSS 文件 */
+</style>

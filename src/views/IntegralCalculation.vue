@@ -67,8 +67,5 @@ export default {
 </script>
 
 <style>
-input {
-  height: 30px; /* 确保输入框高度一致 */;
-  font-family: monospace; /* 使用等宽字体 */;
-}
+/* 移除样式，统一使用全局 CSS 文件 */
 </style>

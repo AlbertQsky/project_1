@@ -15,9 +15,5 @@ export default {
 </script>
 
 <style>
-/* 添加一些基本样式 */
-nav {
-  display: flex;
-  gap: 10px;
-}
+/* 移除样式，统一使用全局 CSS 文件 */
 </style>

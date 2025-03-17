@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2>三维图像</h2>
-    <div id="ggb-element" style="width: 100%; height: 600px;"></div>
+    <div id="ggb-element"></div> <!-- 样式通过全局 CSS 文件应用 -->
   </div>
 </template>
 
@@ -27,3 +27,7 @@ export default {
   }
 }
 </script>
+
+<style>
+/* 移除样式，统一使用全局 CSS 文件 */
+</style>
